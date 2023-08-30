@@ -32,7 +32,7 @@
 
     .aboutWrapper .aboutLeft{
         width: 80%;
-        margin: auto;
+        text-align: center;
     }
 
     .aboutWrapper .aboutLeft::after{
@@ -45,13 +45,19 @@
 
     .aboutRight h3{
        margin-top: 30px;
+       text-align: center;
     }
 
     .aboutRight p{
+        text-align: center;
         margin: 20px 0;
         color: #576a7e;
         line-height: 22px;
         width: 100%;
+    }
+
+    .aboutRight .aboutBtn{
+        text-align: center;
     }
     /* about style end */
 
@@ -171,12 +177,17 @@
     }
     /* contact style end  */
 
-    /* gellery style start */
+    /* blog style start */
     .blogWrapper{
         grid-template-columns: repeat(1,1fr);
-        gap: 30px;
     }
-    /* gellery style end */
+    /* blog style end */
+
+    /* gallery style start  */
+    .gelleryBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* gallery style end */
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -218,7 +229,7 @@
 
     /* blog style start  */
     .tourBox{
-        height: 440px;
+        height: 460px;
         width: 300px;
         margin: 30px auto;
         background-color: #F1F5F8;
@@ -243,13 +254,11 @@
     }
     /* gellery style end */
 
-    /* gallery style start  */
-    .gelleryBox{
-        grid-template-columns: repeat(1,1fr);
-    }
-    /* gallery style end */
-
     /* footer style start  */
+    .footer{
+        padding: 10px 10px 20px 10px;
+    }
+
     .footer .footerNav ul{
         flex-direction: column;
     }

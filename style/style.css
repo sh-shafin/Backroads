@@ -306,6 +306,10 @@
     color: var(--mainColor);
 }
 
+.blogInfo > span{
+    font-size: 15px;
+}
+
 .blogBtn{
     text-align: center;
 }
