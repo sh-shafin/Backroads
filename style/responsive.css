@@ -1,0 +1,241 @@
+/* responsive css */
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* header  style start  */
+    .header{
+        padding: 0px 50px;
+    }
+
+    .nav ul li a{
+       display: none;
+    }
+
+    .header .socialnav a{
+        display: none;
+    }
+
+    .menuIcon{
+        display: block;
+    }
+    /* header style end  */
+    
+    /* hero style start  */
+    .hero{
+        width: 100%;
+    }
+    /* hero style end  */
+
+    /* about style start  */
+    .aboutWrapper{
+        flex-direction: column;
+    }
+
+    .aboutWrapper .aboutLeft{
+        width: 80%;
+        margin: auto;
+    }
+
+    .aboutWrapper .aboutLeft::after{
+        display: none;
+    }
+
+    .aboutWrapper .aboutRight{
+        width: 80%;
+    }
+
+    .aboutRight h3{
+       margin-top: 30px;
+    }
+
+    .aboutRight p{
+        margin: 20px 0;
+        color: #576a7e;
+        line-height: 22px;
+        width: 100%;
+    }
+    /* about style end */
+
+    /* service style start */
+    .container{
+        width: 100%;
+    }
+
+    .service{
+        width: 100%;
+        height: auto;
+    }
+
+    .serviceWrapper {
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+
+    .serviceBox{
+        margin: auto;
+        text-align: center;
+        display: inline-block;
+        width: 300px;
+    }
+
+    .serviceBox .serviceIcon{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .serviceBox .serviceItem{
+        margin-left: 0px;
+    }
+    /* service style end */
+
+    /* blog style start */
+    .blogWrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .tourBox{
+        margin: 30px auto;
+    }
+    /* blog style end */
+
+    /* contact style start  */
+    .contactWrapper{
+        flex-direction: column;
+    }
+
+    .contactWrapper .contactLeft, .contactRight{
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+    .contactLeft > h2{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .contactItem > p{
+        padding: 10px 50px;
+        font-size: 18px;
+    }
+    /* contact style end  */
+
+    /* gallery style start  */
+    .gelleryBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* gallery style end */
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* hero style start  */
+    .hero{
+        background-image: none;
+        background-color: #2CAEBA;
+    }
+
+    .heroInfo p{
+        margin: 10px 20px 20px 20px;
+    }
+    /* hero style end  */
+
+    /* service style start  */
+    .serviceWrapper {
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    /* service style end  */
+
+    /* contact style start  */
+    .contactLeft > h2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .contactWrapper .contactRight .contactBtn input{
+        width: 60%;
+        padding: 5px 10px;
+        height: 30px;
+    }
+    
+    .contactWrapper input::placeholder{
+        letter-spacing: 4px;
+        font-size: 14px;
+    }
+    
+    .contactBtn button{
+        padding: 5px 10px;
+    }
+
+    .contactItem > p{
+        font-size: 15px;
+    }
+    /* contact style end  */
+
+    /* gellery style start */
+    .blogWrapper{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    /* gellery style end */
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 500px) {
+    /* header  style start  */
+    .header{
+        padding: 0px 30px;
+        height: 50px;
+    }
+    /* header style end  */
+
+    /* hero style start  */
+    .heroInfo h1{
+        font-size: 40px;
+    }
+    
+    .heroInfo p{
+        max-width: 790px;
+        font-size: 16px;
+    }
+    
+    .heroBtn button{
+        padding: 15px 20px;
+        font-size: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background-color: #FFFFFF;
+        color: var(--mainColor);
+        border: 1px solid transparent;
+        transition: .5s;
+    }
+    /* hero style end  */
+
+    /* service style start  */
+    .service-h h2{
+        font-size: 25px;
+    }
+    /* service style end  */
+
+    /* gellery style start */
+    .blogTitle > h2{
+        font-size: 25px;
+    }
+    /* gellery style end */
+
+    /* gallery style start  */
+    .gelleryBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* gallery style end */
+
+    /* footer style start  */
+    .footer .footerNav ul{
+        flex-direction: column;
+    }
+
+    .footer .footerNav ul li a{
+        display: inline-block;
+        margin: 10px 0px;
+    }
+    /* footer style end  */
+}

@@ -1,0 +1,471 @@
+/* universal style start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* universal style end */
+
+/* reuseable style start */
+:root{
+    --mainColor: #2CAEBA;
+}
+
+.container{
+    width: 1150px;
+    margin: auto;
+}
+
+.padding70{
+    padding: 70px 0px;
+}
+/* reuseable style end */
+
+/* header style start */
+.header{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.027);
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: black;
+    transition: .4s;
+}
+
+.nav ul li a:hover{
+    color: var(--mainColor);
+}
+
+.header .socialnav a{
+   padding: 5px;
+   font-size: 20px;
+   color: var(--mainColor);
+   transition: .4s;
+}
+
+.header .socialnav a:hover{
+    color: #2caeba7c;
+}
+
+.menuIcon{
+    display: none;
+}
+/* header style end */
+
+/* hero aria start */
+.hero{
+    background-image:linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/download.jfif);
+    height: calc(100vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroInfo{
+    margin: auto ;
+    color: #fff;
+    text-align: center;
+}
+
+.heroInfo h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.heroInfo p{
+    max-width: 790px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 10px 0px 20px 0px;
+}
+
+.heroBtn button{
+    padding: 18px 25px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: var(--mainColor);
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.heroBtn button:hover{
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+/* hero aria end */
+
+/* about style start */
+.about-h{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 20px 0px 80px 0px;
+}
+
+.aboutWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWrapper .aboutLeft, .aboutRight{
+    width: 50%;
+}
+
+.aboutWrapper .aboutLeft{
+    position: relative;
+    z-index: 1;
+}
+
+.aboutWrapper .aboutLeft img{
+    width: 90%;
+}
+
+.aboutWrapper .aboutLeft::after{
+    position: absolute;
+    content: "";
+    right: 80px;
+    bottom: 15px;
+    height: 100%;
+    width: 88%;
+    border: 10px solid var(--mainColor);
+    z-index: -1;
+}
+
+.aboutRight h3{
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+
+.aboutRight p{
+    margin: 20px 0;
+    color: #576a7e;
+    line-height: 22px;
+    width: 540px;
+}
+
+.aboutRight .aboutBtn button{
+    padding: 10px;
+    letter-spacing: 4px;
+    background-color: var(--mainColor);
+    color: #fff;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+.aboutRight .aboutBtn button:hover{
+    background-color: transparent;
+    border-color: var(--mainColor);
+    color: var(--mainColor);
+}
+/* about style end */
+
+/* service style start */
+.service{
+    height: 400px;
+    background-color: #F1F5F8;
+}
+
+.service-h h2{
+    font-size: 35px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-h h2 > span{
+    color: var(--mainColor);
+}
+
+.serviceWrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.serviceBox{
+    display: flex;
+}
+
+.serviceBox .serviceIcon{
+    font-size: 30px;
+    height: 65px;
+    width: 80px;
+    text-align: center;
+    line-height: 65px;
+    background-color: var(--mainColor);
+    color: #044E53;
+}
+
+.serviceBox .serviceItem{
+    margin-left: 20px;
+}
+
+.serviceBox .serviceItem > h3{
+    letter-spacing: 4px;
+}
+
+.serviceBox .serviceItem > p{
+    margin: 10px 0;
+    color: #576a7e;
+}
+/* service style end */
+
+/* blog style start */
+.blogTitle > h2{
+    font-size: 35px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blogTitle > h2 span{
+    color: var(--mainColor);
+}
+
+.blogWrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.tourBox{
+    height: 420px;
+    width: 350px;
+    margin: 30px auto;
+    background-color: #F1F5F8;
+    transition: .5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tourBox:hover{
+    transform: scale(1.03);
+}
+
+.tourBox img{
+    height: 220px;
+    width: 350px;
+}
+
+.tourBox .blogImg{
+    position: relative;
+}
+
+.tourBox .blogImg > h5{
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    padding: 10px;
+    background-color: #88EBF2;
+    font-size: 15px;
+}
+
+.tourBox .blogItem{
+    width: 300px;
+    margin: auto;
+}
+
+.blogItem > h4{
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.blogItem > p{
+    margin: 15px 0;
+    font-size: 17px;
+    line-height: 20px;
+    color: #576a7e;
+}
+
+.blogInfo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--mainColor);
+}
+
+.blogBtn{
+    text-align: center;
+}
+
+.blogBtn button{
+    padding: 10px;
+    letter-spacing: 4px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: var(--mainColor);
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+.blogBtn button:hover{
+    background-color: transparent;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+/* blog style end */
+
+/* contact style start */
+.contact{
+    background-color: var(--mainColor);
+}
+
+.contactWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactWrapper .contactLeft, .contactRight{
+    width: 50%;
+}
+
+.contactLeft > h2{
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.contactBtn{
+    display: flex;
+}
+
+.contactWrapper .contactRight .contactBtn input{
+    width: 70%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.contactWrapper input::placeholder{
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+
+.contactBtn button{
+    padding: 10px;
+    letter-spacing: 4px;
+    margin-left: 5px;
+    color: black;
+    background-color: #88EBF2;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+.contactBtn button:hover{
+    background-color: #576a7e;
+}
+
+.contactItem > p{
+    margin: 5px 0px;
+    color: #70EBF2;
+    font-size: 18px;
+}
+/* contact style end */
+
+/* gellery style start */
+.gelleryBox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0px;
+}
+
+.gelleryBox .img{
+    position: relative;
+}
+
+.gelleryBox .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.gelleryBox .img .imgIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    transition: .5s;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.gelleryBox .img:hover{
+    opacity: 0.6;
+    transition: .5s;
+}
+
+.gelleryBox .img:hover .imgIcon{
+   opacity: 1;
+}
+/* gellery style end */
+
+/* footer style start  */
+.footer{
+    padding: 80px;
+    text-align: center;
+    background-color: #102A42;
+}
+
+.footer .footerNav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.footer .footerNav ul li a{
+    text-decoration: none;
+    margin: 10px 20px;
+    color: #fff;
+    transition: .4s;
+    letter-spacing: 4px;
+}
+
+.footer .footerNav ul li a:hover{
+    color: #2CAEBA;
+}
+
+.footerSocial a{
+    padding: 7px;
+    font-size: 30px;
+    color: #fff;
+    transition: .4s;
+}
+
+.footerSocial a:hover{
+    color: #2CAEBA;
+}
+
+.footer-P p{
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+/* footer style end  */
